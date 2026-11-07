@@ -13,7 +13,7 @@ assets/css/style.css   All styles
 assets/js/data.js       Games + rosters + player lookup helpers — edit this to add/rename teams or players
 assets/js/main.js       Site behavior (nav, animations, filtering, etc.)
 assets/js/player.js     Renders a player's profile from the ?p= URL param
-assets/img/logo.png     Org logo (used as favicon, nav mark, hero mark)
+assets/img/newlogo.png     Org logo (used as favicon, nav mark, hero mark)
 ```
 
 ## Editing rosters
