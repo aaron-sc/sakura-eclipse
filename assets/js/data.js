@@ -25,42 +25,53 @@ const GAMES = [
     blurb: "Tactical 5v5 shooter — precision utility and clutch-factor gunplay.",
     teams: [
       {
-        name: "Sakura Eclipse White",
+        name: "Sakura Eclipse Astrals",
         tier: "Main Roster",
         roster: [
-          { name: "zeil", handle: "zeil_val", platform: "Twitch", captain: true },
-          { name: "Ukiy0", handle: "Jaden", platform: "Twitch" },
-          { name: "gigaberry", handle: "gigaberry", platform: "Twitch", igl: true },
-          { name: "K11z", handle: "k11z", platform: "Twitch" },
-          { name: "Shadi", handle: "" }
-        ],
-        subs: [{ name: "solaine", handle: "solaine", platform: "Twitch" }]
-      },
-      {
-        name: "Sakura Eclipse Black",
-        tier: "Secondary Roster",
-        roster: [
-          { name: "Tanuki", handle: "@TrashPanda_san", captain: true },
-          { name: "Jaylen", handle: "@jay_kizzy35322" },
-          { name: "TrexDuh", handle: "@lexahwa" },
-          { name: "Zigz", handle: "@tapecowboy" },
-          { name: "Night", handle: "" }
+          { name: "Zeil", handle: "", captain: true },
+          { name: "Musuo", handle: "" },
+          { name: "Tokyo", handle: "" },
+          { name: "Prince", handle: "" },
+          { name: "MoIzwn", handle: "" }
         ],
         subs: [
-          { name: "Realitycheck", handle: "" },
-          { name: "OnlyBuds", handle: "@OnlyBudsG" }
+          { name: "Soriya", handle: "" },
+          { name: "Bubble", handle: "" }
         ]
       },
       {
-        name: "Sakura Eclipse Pink",
-        tier: "Academy+ Roster",
+        name: "Sakura Eclipse",
+        tier: "Secondary Roster",
         roster: [
-          { name: "Swaggy", handle: "@SwaggyLor", captain: true },
-          { name: "Royal", handle: "@official_r0yal1" },
-          { name: "BlueTarget", handle: "BlueTarget|B.T.", igl: true },
-          { name: "Nut", handle: "" }
+          { name: "Bhsalty", handle: "" },
+          { name: "Gigaberry", handle: "" }
+        ]
+      },
+      {
+        name: "Sakura Eclipse nova",
+        tier: "Tertiary Roster",
+        roster: [
+          { name: "Tanuki", handle: "" },
+          { name: "Shadi", handle: "" },
+          { name: "Ukiyo", handle: "" }
         ],
-        subs: [{ name: "Milk", handle: "@callm3milk" }]
+        subs: [
+          { name: "Trex", handle: "" },
+          { name: "Night", handle: "" }
+        ]
+      },
+      {
+        name: "Sakura Eclipse Lunar",
+        tier: "Academy Roster",
+        roster: [
+          { name: "Buds", handle: "" },
+          { name: "Royal", handle: "" },
+          { name: "Kyro", handle: "" },
+          { name: "Zigz", handle: "" },
+          { name: "Scaffold", handle: "" },
+          { name: "Jona", handle: "" },
+          { name: "Swaggy", handle: "", captain: true }
+        ]
       }
     ]
   },
@@ -71,11 +82,57 @@ const GAMES = [
     blurb: "Our deepest pipeline — six rosters spanning open, all-ages, and U18 play.",
     teams: [
       { name: "Sakura Eclipse", tier: "Main Roster" },
-      { name: "Sakura Eclipse Vanguard", tier: "Secondary Roster" },
+      {
+        name: "Sakura Eclipse Vanguard",
+        tier: "Secondary Roster",
+        roster: [
+          { name: "Bili", handle: "" },
+          { name: "Recoil", handle: "" },
+          { name: "Snow", handle: "" },
+          { name: "Pokey", handle: "" }
+        ]
+      },
       { name: "Sakura Eclipse ELITE", tier: "All-Ages Roster" },
-      { name: "Sakura Eclipse Moon", tier: "U18 Main Roster" },
-      { name: "Sakura Eclipse SUN", tier: "U18 Secondary Roster" },
+      {
+        name: "Sakura Eclipse Moon",
+        tier: "U18 Main Roster",
+        roster: [
+          { name: "Stumpy", handle: "" },
+          { name: "Shadow", handle: "" },
+          { name: "Slinky", handle: "" },
+          { name: "Ghostly", handle: "" },
+          { name: "Koszmar", handle: "" }
+        ],
+        subs: [{ name: "Skylar", handle: "" }]
+      },
+      {
+        name: "Sakura Eclipse SUN",
+        tier: "U18 Secondary Roster",
+        roster: [
+          { name: "Atlast", handle: "" },
+          { name: "s03py", handle: "" },
+          { name: "sniper", handle: "" }
+        ],
+        subs: [{ name: "suburbanthug", handle: "" }]
+      },
       { name: "Sakura Eclipse ACAD", tier: "Academy Roster" }
+    ]
+  },
+  {
+    id: "apex",
+    name: "Apex Legends",
+    badge: "APEX",
+    blurb: "Battle royale trios — rotations, third-party timing, and clutch resets.",
+    teams: [
+      {
+        name: "Sakura Eclipse",
+        tier: "Main Roster",
+        roster: [
+          { name: "Xyfar", handle: "" },
+          { name: "Mizuki", handle: "" },
+          { name: "lost", handle: "" }
+        ]
+      }
     ]
   },
   {
