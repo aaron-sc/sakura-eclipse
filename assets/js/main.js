@@ -143,24 +143,30 @@
     }, 2600);
   }
 
+  function discordUrlFor(el) {
+    var which = el.getAttribute("data-discord-link") || el.getAttribute("data-copy-discord");
+    return which === "community" ? DISCORD_COMMUNITY_URL : DISCORD_HQ_URL;
+  }
+
   function initDiscordLinks() {
     document.querySelectorAll("[data-discord-link]").forEach(function (el) {
-      if (el.tagName === "A") el.href = DISCORD_URL;
+      if (el.tagName === "A") el.href = discordUrlFor(el);
     });
     document.querySelectorAll("[data-copy-discord]").forEach(function (btn) {
       btn.addEventListener("click", function (e) {
         e.preventDefault();
+        var url = discordUrlFor(btn);
         if (navigator.clipboard && navigator.clipboard.writeText) {
           navigator.clipboard
-            .writeText(DISCORD_URL)
+            .writeText(url)
             .then(function () {
               showToast("Discord invite copied to clipboard");
             })
             .catch(function () {
-              showToast("Copy failed — " + DISCORD_URL);
+              showToast("Copy failed — " + url);
             });
         } else {
-          showToast(DISCORD_URL);
+          showToast(url);
         }
       });
     });

@@ -41,10 +41,15 @@ Player profile links are generated from the game, team name, and player name,
 so renaming a player or team changes their URL — that's expected for a small
 org site, but keep in mind old shared links will 404 after a rename.
 
-## Editing the Discord link
+## Editing the Discord links
 
-Update the `DISCORD_URL` constant at the top of `assets/js/data.js`. It's used
-everywhere Discord is linked or copied.
+The site links to two Discord servers: `DISCORD_HQ_URL` (org/HQ — rosters, tryouts,
+scrims) and `DISCORD_COMMUNITY_URL` (general community hangout). Both constants
+live at the top of `assets/js/data.js`.
+
+Any element with `data-discord-link="community"` or `data-copy-discord="community"`
+points at the community server; leave the value as `"hq"` (or omit it) for the
+default HQ server.
 
 ## Running locally
 

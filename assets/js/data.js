@@ -15,7 +15,8 @@
    player.html picks up `bio` and `facts` automatically if present.
    ========================================================================== */
 
-const DISCORD_URL = "https://discord.gg/PthEkdVx4A";
+const DISCORD_HQ_URL = "https://discord.gg/PthEkdVx4A";
+const DISCORD_COMMUNITY_URL = "https://discord.gg/mbAD7JReWQw";
 
 const GAMES = [
   {
