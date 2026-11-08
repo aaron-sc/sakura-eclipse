@@ -172,6 +172,48 @@
     });
   }
 
+  function initDiscordMenus() {
+    var menus = document.querySelectorAll(".discord-menu");
+    if (!menus.length) return;
+
+    function closeAll(except) {
+      menus.forEach(function (menu) {
+        if (menu === except) return;
+        menu.classList.remove("open");
+        var toggle = menu.querySelector(".discord-menu-toggle");
+        if (toggle) toggle.setAttribute("aria-expanded", "false");
+      });
+    }
+
+    menus.forEach(function (menu) {
+      var toggle = menu.querySelector(".discord-menu-toggle");
+      var panel = menu.querySelector(".discord-menu-panel");
+      if (!toggle || !panel) return;
+
+      toggle.addEventListener("click", function (e) {
+        e.stopPropagation();
+        var open = menu.classList.toggle("open");
+        toggle.setAttribute("aria-expanded", open ? "true" : "false");
+        closeAll(open ? menu : null);
+      });
+
+      panel.addEventListener("click", function (e) {
+        if (e.target.closest("a")) {
+          menu.classList.remove("open");
+          toggle.setAttribute("aria-expanded", "false");
+        }
+      });
+    });
+
+    document.addEventListener("click", function () {
+      closeAll(null);
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") closeAll(null);
+    });
+  }
+
   /* ------------------------------------------------------------------
      Stat counters
      ------------------------------------------------------------------ */
@@ -499,6 +541,7 @@
     initBackToTop();
     initPetals();
     initDiscordLinks();
+    initDiscordMenus();
     initFooterYear();
     initStatTargets();
     renderGamesGrid();

@@ -46,10 +46,22 @@
       </nav>
 
       <div class="nav-actions">
-        <a class="btn btn-ghost" href="#" data-discord-link="hq" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.369A19.79 19.79 0 0 0 15.885 3c-.211.375-.444.879-.608 1.278a18.27 18.27 0 0 0-5.487 0A12.6 12.6 0 0 0 9.182 3a19.74 19.74 0 0 0-4.435 1.371C1.6 8.845.892 13.208 1.245 17.51a19.9 19.9 0 0 0 5.993 3.03c.483-.657.913-1.355 1.284-2.09a12.9 12.9 0 0 1-2.023-.973c.17-.124.336-.253.497-.386a14.2 14.2 0 0 0 12.005 0c.162.133.328.262.497.386-.646.386-1.323.71-2.024.974.372.734.801 1.432 1.285 2.09a19.83 19.83 0 0 0 5.996-3.031c.414-4.917-.708-9.242-2.965-13.14ZM8.62 14.85c-1.007 0-1.834-.923-1.834-2.06 0-1.136.809-2.06 1.834-2.06 1.033 0 1.86.933 1.834 2.06 0 1.137-.8 2.06-1.834 2.06Zm6.775 0c-1.006 0-1.833-.923-1.833-2.06 0-1.136.808-2.06 1.833-2.06 1.034 0 1.86.933 1.834 2.06 0 1.137-.8 2.06-1.834 2.06Z"/></svg>
-          <span class="btn-label">Discord</span>
-        </a>
+        <div class="discord-menu">
+          <button class="btn btn-ghost discord-menu-toggle" type="button" aria-haspopup="true" aria-expanded="false">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.369A19.79 19.79 0 0 0 15.885 3c-.211.375-.444.879-.608 1.278a18.27 18.27 0 0 0-5.487 0A12.6 12.6 0 0 0 9.182 3a19.74 19.74 0 0 0-4.435 1.371C1.6 8.845.892 13.208 1.245 17.51a19.9 19.9 0 0 0 5.993 3.03c.483-.657.913-1.355 1.284-2.09a12.9 12.9 0 0 1-2.023-.973c.17-.124.336-.253.497-.386a14.2 14.2 0 0 0 12.005 0c.162.133.328.262.497.386-.646.386-1.323.71-2.024.974.372.734.801 1.432 1.285 2.09a19.83 19.83 0 0 0 5.996-3.031c.414-4.917-.708-9.242-2.965-13.14ZM8.62 14.85c-1.007 0-1.834-.923-1.834-2.06 0-1.136.809-2.06 1.834-2.06 1.033 0 1.86.933 1.834 2.06 0 1.137-.8 2.06-1.834 2.06Zm6.775 0c-1.006 0-1.833-.923-1.833-2.06 0-1.136.808-2.06 1.833-2.06 1.034 0 1.86.933 1.834 2.06 0 1.137-.8 2.06-1.834 2.06Z"/></svg>
+            <span class="btn-label">Discord</span>
+          </button>
+          <div class="discord-menu-panel">
+            <a href="#" data-discord-link="hq" target="_blank" rel="noopener">
+              <span class="discord-menu-title">HQ Server</span>
+              <span class="discord-menu-sub">Rosters, tryouts &amp; scrims</span>
+            </a>
+            <a href="#" data-discord-link="community" target="_blank" rel="noopener">
+              <span class="discord-menu-title">Community Server</span>
+              <span class="discord-menu-sub">Hang out with the fanbase</span>
+            </a>
+          </div>
+        </div>
         <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-controls="nav-links" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
@@ -72,10 +84,22 @@
           A multi-title esports organization built on discipline, growth, and community. Fourteen rosters, six titles, one banner.
         </p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#" data-discord-link="hq" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.369A19.79 19.79 0 0 0 15.885 3c-.211.375-.444.879-.608 1.278a18.27 18.27 0 0 0-5.487 0A12.6 12.6 0 0 0 9.182 3a19.74 19.74 0 0 0-4.435 1.371C1.6 8.845.892 13.208 1.245 17.51a19.9 19.9 0 0 0 5.993 3.03c.483-.657.913-1.355 1.284-2.09a12.9 12.9 0 0 1-2.023-.973c.17-.124.336-.253.497-.386a14.2 14.2 0 0 0 12.005 0c.162.133.328.262.497.386-.646.386-1.323.71-2.024.974.372.734.801 1.432 1.285 2.09a19.83 19.83 0 0 0 5.996-3.031c.414-4.917-.708-9.242-2.965-13.14ZM8.62 14.85c-1.007 0-1.834-.923-1.834-2.06 0-1.136.809-2.06 1.834-2.06 1.033 0 1.86.933 1.834 2.06 0 1.137-.8 2.06-1.834 2.06Zm6.775 0c-1.006 0-1.833-.923-1.833-2.06 0-1.136.808-2.06 1.833-2.06 1.034 0 1.86.933 1.834 2.06 0 1.137-.8 2.06-1.834 2.06Z"/></svg>
-            Join our Discord
-          </a>
+          <div class="discord-menu">
+            <button class="btn btn-primary discord-menu-toggle" type="button" aria-haspopup="true" aria-expanded="false">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.369A19.79 19.79 0 0 0 15.885 3c-.211.375-.444.879-.608 1.278a18.27 18.27 0 0 0-5.487 0A12.6 12.6 0 0 0 9.182 3a19.74 19.74 0 0 0-4.435 1.371C1.6 8.845.892 13.208 1.245 17.51a19.9 19.9 0 0 0 5.993 3.03c.483-.657.913-1.355 1.284-2.09a12.9 12.9 0 0 1-2.023-.973c.17-.124.336-.253.497-.386a14.2 14.2 0 0 0 12.005 0c.162.133.328.262.497.386-.646.386-1.323.71-2.024.974.372.734.801 1.432 1.285 2.09a19.83 19.83 0 0 0 5.996-3.031c.414-4.917-.708-9.242-2.965-13.14ZM8.62 14.85c-1.007 0-1.834-.923-1.834-2.06 0-1.136.809-2.06 1.834-2.06 1.033 0 1.86.933 1.834 2.06 0 1.137-.8 2.06-1.834 2.06Zm6.775 0c-1.006 0-1.833-.923-1.833-2.06 0-1.136.808-2.06 1.833-2.06 1.034 0 1.86.933 1.834 2.06 0 1.137-.8 2.06-1.834 2.06Z"/></svg>
+              Join our Discord
+            </button>
+            <div class="discord-menu-panel">
+              <a href="#" data-discord-link="hq" target="_blank" rel="noopener">
+                <span class="discord-menu-title">HQ Server</span>
+                <span class="discord-menu-sub">Rosters, tryouts &amp; scrims</span>
+              </a>
+              <a href="#" data-discord-link="community" target="_blank" rel="noopener">
+                <span class="discord-menu-title">Community Server</span>
+                <span class="discord-menu-sub">Hang out with the fanbase</span>
+              </a>
+            </div>
+          </div>
           <a class="btn btn-ghost" href="teams.html">View All Teams</a>
         </div>
       </div>
@@ -211,7 +235,10 @@
       <div class="footer-bottom">
         <span>© <span id="year"></span> Sakura Eclipse. All rights reserved.</span>
         <div class="footer-social">
-          <a href="#" data-discord-link="hq" target="_blank" rel="noopener" aria-label="Sakura Eclipse Discord">
+          <a href="#" data-discord-link="hq" target="_blank" rel="noopener" aria-label="Sakura Eclipse HQ Discord">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.369A19.79 19.79 0 0 0 15.885 3c-.211.375-.444.879-.608 1.278a18.27 18.27 0 0 0-5.487 0A12.6 12.6 0 0 0 9.182 3a19.74 19.74 0 0 0-4.435 1.371C1.6 8.845.892 13.208 1.245 17.51a19.9 19.9 0 0 0 5.993 3.03c.483-.657.913-1.355 1.284-2.09a12.9 12.9 0 0 1-2.023-.973c.17-.124.336-.253.497-.386a14.2 14.2 0 0 0 12.005 0c.162.133.328.262.497.386-.646.386-1.323.71-2.024.974.372.734.801 1.432 1.285 2.09a19.83 19.83 0 0 0 5.996-3.031c.414-4.917-.708-9.242-2.965-13.14ZM8.62 14.85c-1.007 0-1.834-.923-1.834-2.06 0-1.136.809-2.06 1.834-2.06 1.033 0 1.86.933 1.834 2.06 0 1.137-.8 2.06-1.834 2.06Zm6.775 0c-1.006 0-1.833-.923-1.833-2.06 0-1.136.808-2.06 1.833-2.06 1.034 0 1.86.933 1.834 2.06 0 1.137-.8 2.06-1.834 2.06Z"/></svg>
+          </a>
+          <a href="#" data-discord-link="community" target="_blank" rel="noopener" aria-label="Sakura Eclipse Community Discord">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.369A19.79 19.79 0 0 0 15.885 3c-.211.375-.444.879-.608 1.278a18.27 18.27 0 0 0-5.487 0A12.6 12.6 0 0 0 9.182 3a19.74 19.74 0 0 0-4.435 1.371C1.6 8.845.892 13.208 1.245 17.51a19.9 19.9 0 0 0 5.993 3.03c.483-.657.913-1.355 1.284-2.09a12.9 12.9 0 0 1-2.023-.973c.17-.124.336-.253.497-.386a14.2 14.2 0 0 0 12.005 0c.162.133.328.262.497.386-.646.386-1.323.71-2.024.974.372.734.801 1.432 1.285 2.09a19.83 19.83 0 0 0 5.996-3.031c.414-4.917-.708-9.242-2.965-13.14ZM8.62 14.85c-1.007 0-1.834-.923-1.834-2.06 0-1.136.809-2.06 1.834-2.06 1.033 0 1.86.933 1.834 2.06 0 1.137-.8 2.06-1.834 2.06Zm6.775 0c-1.006 0-1.833-.923-1.833-2.06 0-1.136.808-2.06 1.833-2.06 1.034 0 1.86.933 1.834 2.06 0 1.137-.8 2.06-1.834 2.06Z"/></svg>
           </a>
         </div>
