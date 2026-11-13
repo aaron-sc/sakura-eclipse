@@ -16,7 +16,7 @@
    ========================================================================== */
 
 const DISCORD_HQ_URL = "https://discord.gg/PthEkdVx4A";
-const DISCORD_COMMUNITY_URL = "https://discord.gg/mbAD7JReWQw";
+const DISCORD_COMMUNITY_URL = "https://discord.gg/UHs5nEwVrZ";
 
 const GAMES = [
   {
